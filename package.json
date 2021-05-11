@@ -21,12 +21,12 @@
     "typescript": "~3.9.7"
   },
   "dependencies": {
-    "@aws-cdk/aws-apigateway": "^1.102.0",
-    "@aws-cdk/aws-codepipeline": "^1.102.0",
-    "@aws-cdk/aws-codepipeline-actions": "^1.102.0",
-    "@aws-cdk/aws-lambda": "^1.102.0",
+    "@aws-cdk/aws-apigateway": "^1.92.0",
+    "@aws-cdk/aws-codepipeline": "^1.92.0",
+    "@aws-cdk/aws-codepipeline-actions": "^1.92.0",
+    "@aws-cdk/aws-lambda": "^1.92.0",
     "@aws-cdk/core": "1.92.0",
-    "@aws-cdk/pipelines": "^1.102.0",
+    "@aws-cdk/pipelines": "^1.92.0",
     "@types/aws-lambda": "^8.10.76",
     "cdk-assume-role-credential-plugin": "^1.2.2",
     "source-map-support": "^0.5.16"
