@@ -16,7 +16,7 @@ export class Cdkpipeline1PipelineStack extends Stack {
  
     const pipeline = new CdkPipeline(this, 'Pipeline', {
       // The pipeline name
-      pipelineName: 'WebServicePipeline',
+      pipelineName: 'cdk-pipeline1',
       cloudAssemblyArtifact,
 
       sourceAction: new codepipeline_actions.GitHubSourceAction({
