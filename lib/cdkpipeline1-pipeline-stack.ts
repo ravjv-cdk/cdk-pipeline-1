@@ -3,11 +3,13 @@ import * as codepipeline_actions from '@aws-cdk/aws-codepipeline-actions'
 import { Construct, SecretValue, Stack, StackProps } from '@aws-cdk/core'
 import { CdkPipeline, SimpleSynthAction, ShellScriptAction } from "@aws-cdk/pipelines"
 import { CdkpipelinesDemoStage } from './cdkpipeline1-stage';
-
+import { CfnOutput, Stage, StageProps } from '@aws-cdk/core'
 /**
  * The application pipeline stack
  */
 export class Cdkpipeline1PipelineStack extends Stack {
+  public readonly urlOutput: CfnOutput
+
   constructor(scope: Construct, id: string, props?: StackProps) {
     super(scope, id, props)
 
