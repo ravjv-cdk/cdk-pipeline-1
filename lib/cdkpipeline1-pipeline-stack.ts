@@ -31,8 +31,9 @@ export class Cdkpipeline1PipelineStack extends Stack {
        synthAction: SimpleSynthAction.standardNpmSynth({
          sourceArtifact,
          cloudAssemblyArtifact,
-
-         buildCommand: 'npm run build'
+         installCommand: 'npm install -g aws-cdk',
+         buildCommand: 'npm run build',
+         synthCommand: 'cdk synth',
        }),
     })
     const stage = pipeline.addApplicationStage(new CdkpipelinesDemoStage(this, 'PreProd', {
